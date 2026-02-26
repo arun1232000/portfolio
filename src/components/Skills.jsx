@@ -1,10 +1,11 @@
 import {
-  FaPython, FaPhp, FaJsSquare, FaNodeJs, FaAngular, FaBootstrap,
-  FaGitAlt, FaLinux, FaWindows, FaDatabase
+  FaPython, FaPhp, FaJsSquare, FaNodeJs, FaBootstrap,
+  FaGitAlt, FaLinux, FaWindows, FaDocker, FaCode
 } from 'react-icons/fa'
 import {
-  SiCplusplus, SiC, SiDjango, SiCakephp, SiJquery,
-  SiMysql, SiMongodb, SiPostman, SiSourcetree
+  SiDjango, SiCakephp, SiJquery,
+  SiMysql, SiMongodb, SiPostman,
+  SiFastapi, SiLaravel, SiNextdotjs, SiPostgresql
 } from 'react-icons/si'
 import { useScrollReveal } from '../hooks/useScrollReveal'
 import './Skills.css'
@@ -15,18 +16,18 @@ const skillCategories = [
     skills: [
       { name: 'Python',      icon: <FaPython />,    color: '#3776AB' },
       { name: 'PHP',         icon: <FaPhp />,       color: '#8892BE' },
-      { name: 'C++',         icon: <SiCplusplus />, color: '#00599C' },
       { name: 'JavaScript',  icon: <FaJsSquare />,  color: '#F7DF1E' },
-      { name: 'C',           icon: <SiC />,         color: '#A8B9CC' },
     ]
   },
   {
     title: 'Frameworks',
     skills: [
-      { name: 'CakePHP',   icon: <SiCakephp />,   color: '#D33C44' },
       { name: 'Django',    icon: <SiDjango />,    color: '#0C4B33' },
+      { name: 'FastAPI',   icon: <SiFastapi />,   color: '#009688' },
+      { name: 'CakePHP',   icon: <SiCakephp />,   color: '#D33C44' },
+      { name: 'Laravel',   icon: <SiLaravel />,   color: '#FF2D20' },
+      { name: 'Next.js',   icon: <SiNextdotjs />, color: '#000000' },
       { name: 'Node.js',   icon: <FaNodeJs />,    color: '#68A063' },
-      { name: 'Angular',   icon: <FaAngular />,   color: '#DD0031' },
       { name: 'jQuery',    icon: <SiJquery />,    color: '#0769AD' },
       { name: 'Bootstrap', icon: <FaBootstrap />, color: '#7952B3' },
     ]
@@ -34,18 +35,20 @@ const skillCategories = [
   {
     title: 'Databases',
     skills: [
-      { name: 'MySQL',   icon: <SiMysql />,   color: '#00758F' },
-      { name: 'MongoDB', icon: <SiMongodb />, color: '#47A248' },
+      { name: 'PostgreSQL', icon: <SiPostgresql />, color: '#336791' },
+      { name: 'MySQL',      icon: <SiMysql />,      color: '#00758F' },
+      { name: 'MongoDB',    icon: <SiMongodb />,    color: '#47A248' },
     ]
   },
   {
     title: 'Tools & Platforms',
     skills: [
-      { name: 'Git',        icon: <FaGitAlt />,     color: '#F05032' },
-      { name: 'Sourcetree', icon: <SiSourcetree />, color: '#0052CC' },
-      { name: 'Postman',    icon: <SiPostman />,    color: '#FF6C37' },
-      { name: 'Linux',      icon: <FaLinux />,      color: '#FCC624' },
-      { name: 'Windows',    icon: <FaWindows />,    color: '#0078D6' },
+      { name: 'Git',         icon: <FaGitAlt />,  color: '#F05032' },
+      { name: 'Docker',      icon: <FaDocker />,  color: '#2496ED' },
+      { name: 'Claude Code', icon: <FaCode />,    color: '#CC785C' },
+      { name: 'Postman',     icon: <SiPostman />, color: '#FF6C37' },
+      { name: 'Linux',       icon: <FaLinux />,   color: '#FCC624' },
+      { name: 'Windows',     icon: <FaWindows />, color: '#0078D6' },
     ]
   },
 ]

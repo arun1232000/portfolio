@@ -8,7 +8,6 @@ const education = [
     institution: "St. Joseph's College of Engineering and Technology",
     location: 'Palai, Kerala',
     period: 'Oct 2021 - June 2023',
-    gpa: '6.88',
     courses: [
       'Operating Systems', 'Data Structures', 'Analysis of Algorithms',
       'Artificial Intelligence', 'Machine Learning', 'Networking', 'Databases'
@@ -19,7 +18,6 @@ const education = [
     institution: 'Bishop Vayalil Memorial Holy Cross College',
     location: 'Cherpunkal, Kerala',
     period: 'July 2018 - Aug 2021',
-    gpa: '5.43',
     courses: []
   },
 ]
@@ -48,7 +46,6 @@ function Education() {
                   </div>
                   <div className="education-meta">
                     <span className="education-period">{edu.period}</span>
-                    <span className="education-gpa">GPA: {edu.gpa}</span>
                   </div>
                 </div>
 

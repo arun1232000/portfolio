@@ -3,9 +3,9 @@ import { useScrollReveal } from '../hooks/useScrollReveal'
 import './About.css'
 
 const highlights = [
-  { icon: <FaCode />, title: 'Frontend', desc: 'HTML, CSS, JS, Angular, Bootstrap' },
-  { icon: <FaServer />, title: 'Backend', desc: 'CakePHP, Django, Node.js' },
-  { icon: <FaDatabase />, title: 'Database', desc: 'MySQL, MongoDB' },
+  { icon: <FaCode />, title: 'Frontend', desc: 'HTML, CSS, JS, Next.js, Bootstrap' },
+  { icon: <FaServer />, title: 'Backend', desc: 'Django, FastAPI, CakePHP, Node.js' },
+  { icon: <FaDatabase />, title: 'Database', desc: 'PostgreSQL, MySQL, MongoDB' },
   { icon: <FaUsers />, title: 'Teamwork', desc: 'Agile, Cross-functional' },
 ]
 
@@ -23,7 +23,7 @@ function About() {
           <div className="about-text reveal reveal-left" ref={textRef}>
             <p>
               I'm a passionate <strong>Full-Stack Software Developer</strong> based in Kerala, India,
-              currently working at <strong>MWT Technologies Pvt. Ltd.</strong> in Kochi. With a Master's
+              currently working at <strong>Metaveo.ai Pvt Ltd</strong> (previously MWT Technologies) in Kochi. With a Master's
               in Computer Applications from St. Joseph's College of Engineering and Technology, I bring
               a solid academic foundation paired with hands-on industry experience.
             </p>

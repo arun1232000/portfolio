@@ -8,7 +8,6 @@ const roles = [
   'Full-Stack Developer',
   'Backend Engineer',
   'API Developer',
-  'ERP Specialist',
 ]
 
 function Hero() {
@@ -64,8 +63,7 @@ function Hero() {
 
         <p className="hero-description">
           Full-stack developer crafting robust web applications with modern technologies.
-          Experienced in CakePHP, Django, Node.js &amp; more. Currently building ERP solutions
-          at MWT Technologies.
+          Experienced in Django, FastAPI, CakePHP, Next.js &amp; more. Currently Works at Metaveo.ai (previously MWT Technologies).
         </p>
 
         <div className="hero-socials">

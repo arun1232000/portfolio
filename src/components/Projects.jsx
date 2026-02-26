@@ -4,29 +4,36 @@ import './Projects.css'
 
 const projects = [
   {
-    title: 'E-commerce Website',
-    subtitle: 'Node.js',
-    status: 'In Progress',
-    description: 'Full-featured e-commerce platform with product management, cart functionality, and order processing built with Node.js and MongoDB.',
-    frontend: ['HTML', 'CSS', 'Bootstrap', 'JavaScript'],
-    backend: ['Node.js', 'Express.js', 'MongoDB'],
-    color: '#68a063',
+    title: 'IHM Australia AI Chatbot',
+    subtitle: 'Metaveo.ai',
+    description: 'Online verification AI chatbot and application form for the IHM Australia website, integrating ChatGPT agents for intelligent student verification and admissions.',
+    frontend: ['HTML', 'CSS', 'JavaScript'],
+    backend: ['Python', 'Django', 'PostgreSQL', 'ChatGPT API'],
+    color: '#ff6b35',
   },
   {
-    title: 'Blog Website',
-    subtitle: 'CakePHP',
-    description: 'Dynamic blog platform with content management, user authentication, and CRUD operations built with CakePHP framework.',
-    frontend: ['HTML', 'CSS', 'Bootstrap', 'JavaScript'],
+    title: 'Complaint Management System',
+    subtitle: 'Metaveo.ai',
+    description: 'High-performance complaint management system for IHNA and IHM students to submit, track, and resolve complaints with a modern full-stack architecture.',
+    frontend: ['Next.js', 'React'],
+    backend: ['FastAPI', 'PostgreSQL'],
+    color: '#1565c0',
+  },
+  {
+    title: 'Knowledge Hub (ERP)',
+    subtitle: 'Metaveo.ai',
+    description: "CakePHP-based ERP application for Registered Training Organizations (RTOs) in Australia and other international regions, managing training, compliance, and student records.",
+    frontend: ['CakePHP', 'HTML', 'CSS', 'JavaScript'],
     backend: ['CakePHP', 'MySQL'],
-    color: '#d33c44',
+    color: '#b71c1c',
   },
   {
-    title: 'E-commerce Website',
-    subtitle: 'PHP',
-    description: 'Online shopping platform with product catalog, shopping cart, and payment integration built using core PHP.',
-    frontend: ['HTML', 'CSS', 'Bootstrap', 'JavaScript'],
-    backend: ['PHP', 'MySQL'],
-    color: '#777bb4',
+    title: 'AceEd Mobile App APIs',
+    subtitle: 'Metaveo.ai',
+    description: 'Architected and developed scalable RESTful APIs for the AceEd mobile application, supporting core mobile functionalities including user management and content delivery.',
+    frontend: ['React Native', 'Mobile App'],
+    backend: ['CakePHP', 'MySQL'],
+    color: '#00838f',
   },
   {
     title: 'Medical Supplies Management',
@@ -75,9 +82,6 @@ function Projects() {
                 <div className="project-icon">
                   <FaCode />
                 </div>
-                {project.status && (
-                  <span className="project-status">{project.status}</span>
-                )}
               </div>
 
               <h3 className="project-title">{project.title}</h3>
