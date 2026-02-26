@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import { Link } from 'react-scroll'
 import { HiMenuAlt3, HiX } from 'react-icons/hi'
+import { FaDownload } from 'react-icons/fa'
 import './Navbar.css'
 
 const navLinks = [
@@ -52,6 +53,10 @@ function Navbar() {
             </li>
           ))}
         </ul>
+
+        <a href="/portfolio/resume.pdf" download="Arun_Abraham_Resume.pdf" className="navbar-resume-btn">
+          <FaDownload /> Resume
+        </a>
 
         <button className="navbar-toggle" onClick={() => setMenuOpen(!menuOpen)}>
           {menuOpen ? <HiX /> : <HiMenuAlt3 />}

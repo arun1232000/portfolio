@@ -83,6 +83,27 @@
   width: 100%;
 }
 
+.navbar-resume-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.45rem 1.1rem;
+  border: 1px solid var(--accent);
+  border-radius: 8px;
+  color: var(--accent);
+  font-size: 0.88rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.navbar-resume-btn:hover {
+  background: rgba(0, 212, 170, 0.1);
+  box-shadow: 0 4px 16px rgba(0, 212, 170, 0.2);
+  transform: translateY(-1px);
+}
+
 .navbar-toggle {
   display: none;
   background: none;
@@ -94,6 +115,10 @@
 }
 
 @media (max-width: 768px) {
+  .navbar-resume-btn {
+    display: none;
+  }
+
   .navbar-links {
     position: fixed;
     top: 0;

@@ -212,6 +212,20 @@
   transform: translateY(-2px);
 }
 
+.btn-resume {
+  background: transparent;
+  color: var(--accent);
+  border: 1px solid var(--accent);
+  text-decoration: none;
+}
+
+.btn-resume:hover {
+  background: rgba(0, 212, 170, 0.1);
+  border-color: var(--accent);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0, 212, 170, 0.2);
+}
+
 .hero-scroll-indicator {
   position: absolute;
   bottom: 2rem;

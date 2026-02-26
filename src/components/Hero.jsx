@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import { Link } from 'react-scroll'
-import { FaGithub, FaLinkedin, FaEnvelope, FaPhone } from 'react-icons/fa'
+import { FaGithub, FaLinkedin, FaEnvelope, FaPhone, FaDownload } from 'react-icons/fa'
 import { HiArrowDown } from 'react-icons/hi'
 import './Hero.css'
 
@@ -88,6 +88,9 @@ function Hero() {
           <Link to="projects" smooth duration={500} offset={-80} className="btn btn-outline">
             View Projects
           </Link>
+          <a href="/portfolio/resume.pdf" download="Arun_Abraham_Resume.pdf" className="btn btn-resume">
+            <FaDownload /> Resume
+          </a>
         </div>
       </div>
 
